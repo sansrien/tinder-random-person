@@ -1,11 +1,14 @@
 {
   "name": "my-app-from-scratch",
   "version": "1.0.0",
+  "homepage": "https://sansrien.github.io/tinder-random-person",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --config webpack.config.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
